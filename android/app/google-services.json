@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "155594809818",
+    "firebase_url": "https://eugene-finances.firebaseio.com",
+    "project_id": "eugene-finances",
+    "storage_bucket": "eugene-finances.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155594809818:android:57e6bd379a596c817ee0e3",
+        "android_client_info": {
+          "package_name": "com.brunorigao.eugene_financas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155594809818-n18hvh4u67sm7ut8k7gdi2qb8cqf3nmf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALD5ZRGUcKcdLDk72g0zpXGZUjd2SMvOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155594809818-n18hvh4u67sm7ut8k7gdi2qb8cqf3nmf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
