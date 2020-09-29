@@ -1,7 +1,9 @@
 import 'package:eugene_financas/models/constants.dart';
 import 'package:eugene_financas/screens/home.dart';
-import 'package:eugene_financas/utils/authentication.dart';
+import 'package:eugene_financas/screens/sign_in.dart';
+//import 'package:eugene_financas/utils/authentication.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class AuthDialog extends StatefulWidget {
   @override
@@ -125,9 +127,10 @@ class _AuthDialogState extends State<AuthDialog> {
                   Padding(
                     padding: const EdgeInsets.only(
                       left: 20.0,
-                      bottom: 8,
+                      bottom: 50,
                     ),
                   ),
+
                   Padding(
                     padding: const EdgeInsets.only(
                       left: 20.0,
@@ -244,7 +247,7 @@ class _AuthDialogState extends State<AuthDialog> {
                               color: Colors.blueGrey[800],
                               hoverColor: Colors.blueGrey[900],
                               highlightColor: Colors.black,
-                              onPressed: () async {
+                              /*onPressed: () async {
                                 setState(() {
                                   _isLoggingIn = true;
                                   textFocusNodeEmail.unfocus();
@@ -297,7 +300,7 @@ class _AuthDialogState extends State<AuthDialog> {
                                   _isEditingEmail = false;
                                   _isEditingPassword = false;
                                 });
-                              },
+                              },*/
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15),
                               ),
@@ -338,7 +341,7 @@ class _AuthDialogState extends State<AuthDialog> {
                               color: Colors.blueGrey[800],
                               hoverColor: Colors.blueGrey[900],
                               highlightColor: Colors.black,
-                              onPressed: () async {
+                              /*onPressed: () async {
                                 setState(() {
                                   textFocusNodeEmail.unfocus();
                                   textFocusNodePassword.unfocus();
@@ -385,7 +388,7 @@ class _AuthDialogState extends State<AuthDialog> {
                                   _isEditingEmail = false;
                                   _isEditingPassword = false;
                                 });
-                              },
+                              },*/
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15),
                               ),
@@ -458,6 +461,30 @@ class _AuthDialogState extends State<AuthDialog> {
         );
   }
 
+  /*Widget _signInButton() {
+    return OutlineButton(
+      splashColor: Colors.grey,
+      onPressed: () {
+      signInWithGoogle().then((result) {
+        if (result != null) {
+          Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) {
+                  return Home();
+*/
+
+        /*signInWithGoogle().then((result) {
+          if (result != null) {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) {
+                  return Home();
+                },
+              ),
+            );
+          }
+        });
+      },*/
   Widget _signInButton() {
     return OutlineButton(
       splashColor: Colors.grey,

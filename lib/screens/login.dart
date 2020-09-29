@@ -1,6 +1,6 @@
 import 'package:eugene_financas/models/constants.dart';
-import 'package:eugene_financas/screens/home.dart';
 import 'package:eugene_financas/screens/sign_in.dart';
+import 'package:eugene_financas/screens/start.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -33,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
             children: <Widget>[
               Container(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height/2.5,
+                height: MediaQuery.of(context).size.height/3,
                 decoration: BoxDecoration(
                     gradient: LinearGradient(
                       begin: Alignment.topCenter,
@@ -54,22 +54,6 @@ class _LoginPageState extends State<LoginPage> {
                     Align(
                       child: Image.asset("assets/images/eugene_transparent.png",
                           fit: BoxFit.fill
-                      ),
-                    ),
-
-                    Align(
-                      alignment: Alignment.bottomRight,
-                      child: Padding(
-                        padding: const EdgeInsets.only(
-                            bottom: 32,
-                            right: 32
-                        ),
-                        child: Text('',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18
-                          ),
-                        ),
                       ),
                     ),
                   ],
@@ -224,7 +208,7 @@ class _LoginPageState extends State<LoginPage> {
             Navigator.of(context).push(
               MaterialPageRoute(
                 builder: (context) {
-                  return Home();
+                  return Start();
                 },
               ),
             );
